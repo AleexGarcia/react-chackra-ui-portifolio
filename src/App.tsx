@@ -1,14 +1,13 @@
-import {ChakraProvider} from '@chakra-ui/react'
+
 import Banner from './components/Banner'
-import Header from './components/Header'
+import Layout from './components/Layout'
 
 function App() {
 
   return (
-    <ChakraProvider>
-        <Header />
-        <Banner />
-    </ChakraProvider>
+    <Layout>
+      < Banner/>
+    </Layout>
   )
 
 }
