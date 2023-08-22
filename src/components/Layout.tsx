@@ -6,7 +6,7 @@ function Layout({children}: any) {
     return (
         <>
             <Header/>
-            <Box as="main" boxSizing="border-box" >
+            <Box paddingTop={['52px', '52px', '70px', '70px']} as="main" minW='100%'>
                 {children}
             </Box>
             <Footer />

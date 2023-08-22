@@ -11,10 +11,12 @@ function Header() {
     }
     return (
         <Flex
+            
             as='header'
             pos='fixed'
+            minW='100vw'
+            maxW='100vw'
             justify='space-between'
-            w='100%'
             height={['52px', '52px', '70px', '70px']}
             align='center'
             p='0 2rem'

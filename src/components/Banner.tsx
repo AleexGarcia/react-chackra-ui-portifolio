@@ -21,12 +21,13 @@ export default function Banner() {
             direction={['column', 'column', 'row', 'row']}
             justifyContent='space-around'
             align='center'
-            minW='100vw' minH={'100vh'}
             bg={colorMode === 'dark' ?
                 'linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.64) 100%)'
                 :
                 'whiteAlpha.50'}
-            paddingTop={['52px', '52px', '70px', '70px']}
+            minH='100vh'
+            w='100%'
+            
         >
             <Grid
                 templateColumns='repeat(2,auto)'
@@ -34,7 +35,7 @@ export default function Banner() {
                 rowGap={[4, 4, 4, 8]}
                 p={8}
                 minW='min-content'
-                maxW={[320, 350, 400, 650]}
+                maxW={[320, 350, 400, '50vw']}
             >
                 <GridItem colStart={1} colSpan={2}>
                     <Heading as='h2' size='2xl' >Oi, sou Alexandre Garcia</Heading>
