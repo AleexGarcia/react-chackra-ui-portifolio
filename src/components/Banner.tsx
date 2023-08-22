@@ -17,17 +17,18 @@ export default function Banner() {
     const { colorMode } = useColorMode();
 
     return (
+
         <Flex
             direction={['column', 'column', 'row', 'row']}
-            justifyContent='space-around'
+            justifyContent={['space-between', 'space-between', 'space-around', 'space-around']}
             align='center'
             bg={colorMode === 'dark' ?
                 'linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.64) 100%)'
                 :
                 'whiteAlpha.50'}
-            minH='100vh'
+            minH={['calc(100vh - 66px)', 'calc(100vh - 66px)', 'calc(100vh - 77px)', 'calc(100vh - 77px)']}
             w='100%'
-            
+
         >
             <Grid
                 templateColumns='repeat(2,auto)'
@@ -56,5 +57,7 @@ export default function Banner() {
             </Grid>
             <Image alignSelf={['center', 'center', 'center', 'flex-end']} maxH={['40vh', '50vh', '50vh', '75vh']} src={banner} />
         </Flex>
+
+
     );
 }
