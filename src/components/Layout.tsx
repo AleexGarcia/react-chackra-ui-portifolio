@@ -1,8 +1,12 @@
 import { Flex } from "@chakra-ui/react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { ReactElement } from "react";
+interface children {
+    children: Array<ReactElement>
+}
 
-function Layout({children}: any) {
+function Layout({children}: children) {
     return (
         <>
             <Header/>

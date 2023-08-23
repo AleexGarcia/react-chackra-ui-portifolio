@@ -8,9 +8,11 @@ import {
     Image,
     Link,
     useColorMode,
+    Icon,
 } from '@chakra-ui/react';
 
 import banner from '../assets/banner.png'
+import { EmailBWIcon, GitHubIcon, LinkedinIcon, WhatsAppIcon } from '../Icons/Icons';
 
 export default function Banner() {
 
@@ -30,6 +32,27 @@ export default function Banner() {
             w='100%'
 
         >
+            <Flex direction='column' p='.25rem' borderRadius='8px' align='center' gap='.5rem' bg='white'>
+                <Link
+                    isExternal
+                    href="https://www.linkedin.com/in/aleexgarcia/"
+                >
+                    <Icon cursor='pointer' boxSize={8} as={LinkedinIcon} />
+                </Link>
+                <Link
+                    isExternal
+                    href="https://github.com/AleexGarcia">
+                    <Icon cursor='pointer' boxSize={8} as={GitHubIcon} />
+                </Link>
+                <Link
+                    isExternal href="https://api.whatsapp.com/send?phone=5564981709943&text=Ol%C3%A1!%20tenho%20uma%20proposta%20de%20trabalho%20para%20voc%C3%AA.">
+                    <Icon cursor='pointer' boxSize={9} as={WhatsAppIcon} />
+                </Link>
+                <Link
+                    isExternal href="mailto: alexandre_augusto_garcia@hotmail.com">
+                    <Icon cursor='pointer' boxSize={9} as={EmailBWIcon} />
+                </Link>
+            </Flex>
             <Grid
                 templateColumns='repeat(2,auto)'
                 templateRows='repeat(3, min-content)'

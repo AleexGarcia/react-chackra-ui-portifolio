@@ -1,5 +1,6 @@
 
 import Banner from './components/Banner'
+import Contato from './components/Contato'
 import Footer from './components/Footer'
 import Layout from './components/Layout'
 import Projetos from './components/Projetos'
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <SobreMim />
       <Projetos />
+      <Contato />
       <Footer />
     </Layout>
   )

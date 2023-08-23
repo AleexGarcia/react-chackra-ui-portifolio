@@ -18,7 +18,15 @@ function SobreMim() {
             'Espanhol'
         ],
         certificacoes: [
-
+            'Formação front-end - Alura',
+            'Formação TS - Alura',
+            'Formação React c/ TS - Alura',
+            'Formação fullstack TS - DIO',
+            'Formação Java Developer - DIO'
+        ],
+        educacao: [
+            'Bacharelado em Sistemas de informação - em Andamento',
+            'Engenharia Civil - Incompleto'
         ]
     }
     
@@ -65,7 +73,7 @@ function SobreMim() {
                     <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
                         {competencias.skills.map<JSX.Element>(skill => {
                             return (
-                                <Box p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
+                                <Box key={skill} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
                                     <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{skill}</Text>
                                 </Box>
                             )
@@ -79,7 +87,7 @@ function SobreMim() {
                     <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
                         {competencias.Idiomas?.map(idioma => {
                             return (
-                                <Box p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
+                                <Box key={idioma} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
                                     <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{idioma}</Text>
                                 </Box>
                             )
@@ -93,7 +101,7 @@ function SobreMim() {
                     <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
                         {competencias.certificacoes?.map(certificado => {
                             return (
-                                <Box p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
+                                <Box key={certificado} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
                                     <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{certificado}</Text>
                                 </Box>
                             )
@@ -105,10 +113,10 @@ function SobreMim() {
                        Educação
                     </Heading>
                     <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
-                        {competencias.certificacoes.map(certificado => {
+                        {competencias.educacao.map(graduacao => {
                             return (
-                                <Box p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
-                                    <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{certificado}</Text>
+                                <Box key={graduacao} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
+                                    <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{graduacao}</Text>
                                 </Box>
                             )
                         })}
