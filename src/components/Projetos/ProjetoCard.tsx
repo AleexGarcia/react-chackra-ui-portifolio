@@ -1,11 +1,11 @@
-import { Box, Button, Divider, Flex, Grid, Heading, Image, Link, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Heading, Image, Link, Text, useColorMode } from "@chakra-ui/react";
 import { IProjeto } from "../../Interfaces";
 function ProjetoCard( {content,deploy,imgSrc,name,repository,skills}: IProjeto) {
 
     const { colorMode } = useColorMode();
 
     return (
-        <>
+
             <Grid
                 templateColumns={['auto', 'auto', '1fr 1fr']}
                 alignItems='center'
@@ -19,7 +19,7 @@ function ProjetoCard( {content,deploy,imgSrc,name,repository,skills}: IProjeto) 
                     <Flex wrap='wrap' gap='.5rem'>
                         {skills.map(skill => {
                             return (
-                                <Box key={skill} p='.5rem' borderRadius='8px' bgColor={colorMode === 'dark' ? 'gray.800' : 'gray.200'}>
+                                <Box key={skill} p='.5rem' borderRadius='8px' bgColor={colorMode === 'dark' ? 'gray.800' : 'gray.300'}>
                                     <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'}>{skill}</Text>
                                 </Box>
                             );
@@ -27,7 +27,7 @@ function ProjetoCard( {content,deploy,imgSrc,name,repository,skills}: IProjeto) 
                     </Flex>
                     <Flex gap='1rem'>
                         <Link isExternal href={deploy} textDecoration='none'>
-                            <Button variant="outline" size='lg' >
+                            <Button variant="outline" size='lg' borderColor='gray.300' >
                                 Deploy
                             </Button>
                         </Link>
@@ -37,9 +37,8 @@ function ProjetoCard( {content,deploy,imgSrc,name,repository,skills}: IProjeto) 
                     </Flex>
                 </Flex>
             </Grid >
-            <Divider />
+   
 
-        </>
     )
 }
 

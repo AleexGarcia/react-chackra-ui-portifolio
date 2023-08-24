@@ -6,7 +6,7 @@ interface props {
 }
 
 function Navigation({ menuStatus, toggleMenu }: props) {
-
+    
     return (
         <>
             {menuStatus &&
@@ -20,29 +20,29 @@ function Navigation({ menuStatus, toggleMenu }: props) {
                         right={0}
                         textAlign='end'
                     >
-                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='/#sobre_mim'>Sobre mim</Link>
-                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#competencias'>Competências</Link>
-                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#meu_trabalho'>Meu trabalho</Link>
-                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#contato'>Contato</Link>
+                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#banner'>INÍCIO</Link>
+                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#sobre_mim'>SOBRE</Link>
+                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#meu_trabalho'>MEU TRABALHO</Link>
+                        <Link onClick={toggleMenu} borderTop='1px' p={'1rem 2rem'} fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#contato'>CONTATO</Link>
                     </Flex>
                 </Hide>
             }
             <Show above='lg'>
                 <Breadcrumb
-                    spacing='8px'
+                    spacing='24px'
                     separator={''}
                 >
-                    <BreadcrumbItem>
-                        <BreadcrumbLink fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='/#sobre_mim'>Sobre mim</BreadcrumbLink>
+                     <BreadcrumbItem>
+                        <BreadcrumbLink fontWeight={800} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='/#banner'>INÍCIO</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                        <BreadcrumbLink fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#competencias'>Competências</BreadcrumbLink>
+                        <BreadcrumbLink fontWeight={800} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='/#sobre_mim'>SOBRE</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                        <BreadcrumbLink fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#meu_trabalho'>Meu trabalho</BreadcrumbLink>
+                        <BreadcrumbLink fontWeight={800} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#meu_trabalho'>MEU TRABALHO</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                        <BreadcrumbLink fontWeight={600} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#contato'>Contato</BreadcrumbLink>
+                        <BreadcrumbLink fontWeight={800} textDecoration={'none'} _hover={{ color: 'orange.100' }} href='#contato'>CONTATO</BreadcrumbLink>
                     </BreadcrumbItem>
                 </Breadcrumb>
             </Show>

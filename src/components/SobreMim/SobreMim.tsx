@@ -1,18 +1,18 @@
 import { Box, Button, Divider, Flex, Grid, GridItem, Heading, Text, useColorMode } from "@chakra-ui/react";
 import dataComp from './competencias.json'
-import { ICompetencia } from "../../Interfaces";
+import { ICompetencias } from "../../Interfaces";
 
 function SobreMim() {
     const { colorMode } = useColorMode();
-    const competencias: ICompetencia = {...dataComp};
-    
+    const competencias: ICompetencias = { ...dataComp };
+
     return (
         <Grid
             w='100%'
             minH={['calc(100vh - 66px)', 'calc(100vh - 66px)', 'calc(100vh - 77px)', 'calc(100vh - 77px)']}
             id="sobre_mim"
             templateRows={['repeat(3, min-content)', 'repeat(3, min-content)', 'repeat(2, min-content)']}
-            templateColumns={['auto', 'auto', 'repeat(2,1fr)']}
+            templateColumns={['auto', 'auto', '4fr 6fr']}
             p='2rem'
             gap='2rem'
         >
@@ -41,62 +41,25 @@ function SobreMim() {
                 <Button size='lg' colorScheme="orange" >Contato</Button>
             </GridItem>
             <GridItem>
-                <Box>
-                    <Heading as='h3' fontSize='1.5rem'>
-                        Skills
-                    </Heading>
-                    <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
-                        {competencias.skills.map<JSX.Element>(skill => {
-                            return (
-                                <Box key={skill} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
-                                    <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{skill}</Text>
-                                </Box>
-                            )
-                        })}
-                    </Flex>
-                </Box>
-                <Box>
-                    <Heading as='h3' fontSize='1.5rem'>
-                        Idiomas
-                    </Heading>
-                    <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
-                        {competencias.Idiomas?.map(idioma => {
-                            return (
-                                <Box key={idioma} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
-                                    <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{idioma}</Text>
-                                </Box>
-                            )
-                        })}
-                    </Flex>
-                </Box>
-                <Box>
-                    <Heading as='h3' fontSize='1.5rem'>
-                       Cursos e Certificações
-                    </Heading>
-                    <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
-                        {competencias.certificacoes?.map(certificado => {
-                            return (
-                                <Box key={certificado} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
-                                    <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{certificado}</Text>
-                                </Box>
-                            )
-                        })}
-                    </Flex>
-                </Box>
-                <Box>
-                    <Heading as='h3' fontSize='1.5rem'>
-                       Educação
-                    </Heading>
-                    <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
-                        {competencias.educacao.map(graduacao => {
-                            return (
-                                <Box key={graduacao} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
-                                    <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{graduacao}</Text>
-                                </Box>
-                            )
-                        })}
-                    </Flex>
-                </Box>
+                {Object.keys(competencias).map((key) => {
+                    return (
+                        <Box key={key}>
+                            <Heading as='h3' fontSize='1.5rem'>
+                                {competencias[key]?.title}
+                            </Heading>
+                            <Flex p={'1.5rem 0'} gap='8px' wrap='wrap'>
+                                {
+                                competencias[key]?.content.map<JSX.Element>((item: string) => {
+                                    return (
+                                        <Box key={item} p='.5rem' borderRadius='8px' bgColor={"blackAlpha.300"}>
+                                            <Text fontWeight='500' color={colorMode === 'light' ? 'gray.800' : 'inherit'} >{item}</Text>
+                                        </Box>
+                                    )
+                                })}
+                            </Flex>
+                        </Box>
+                    )
+                })}
             </GridItem>
         </Grid>
 

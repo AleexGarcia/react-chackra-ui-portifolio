@@ -9,6 +9,7 @@ function Projetos() {
 
     return (
         <Flex
+            id="meu_trabalho"
             as='section'
             textAlign='center'
             p='2rem'
@@ -16,11 +17,11 @@ function Projetos() {
             bg={colorMode === 'dark' ?
                 'linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.64) 100%)'
                 :
-                'whiteAlpha.50'}
+                'gray.200'}
         >
             <Box>
                 <Heading paddingBottom='2rem'>Projetos</Heading>
-                <Divider />
+                <Divider borderColor='gray.400' />
             </Box>
             {projetos?.map(projeto => {
                 return (

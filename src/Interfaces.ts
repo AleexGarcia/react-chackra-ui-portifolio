@@ -8,9 +8,15 @@ export interface IProjeto {
     repository: string
 }
 
-export interface ICompetencia {
-    skills: Array<string>
-    Idiomas: Array<string>
-    certificacoes: Array<string>
-    educacao: Array<string>
+interface ICompetencia {
+    title: string
+    content: Array<string>
+}
+
+export interface ICompetencias {
+    skills: ICompetencia
+    idiomas: ICompetencia
+    certificacoes: ICompetencia
+    educacao: ICompetencia
+    [key: string]: ICompetencia | null
 }

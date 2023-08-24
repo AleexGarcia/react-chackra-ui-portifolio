@@ -1,11 +1,13 @@
-import { Box, Divider, Flex, Grid, GridItem, Heading, Link, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Divider, Flex, Grid, Heading, Link, Text, useColorMode } from "@chakra-ui/react";
 import Contato from "./Contato";
 
 function Footer() {
     const { colorMode } = useColorMode();
     return (
         <Grid
+            as={'footer'}
             templateRows='2fr min-content min-content'
+            templateColumns='100%'
             minH='33vh'
             p='2rem'
             gap='1.5rem'
@@ -14,12 +16,12 @@ function Footer() {
                 :
                 'whiteAlpha.50'}
         >
-            <Flex justify='space-around'>
-                <Flex maxW='450px' direction='column' gap='1rem'>
+            <Flex textAlign={['center','left']} w='100%' justify='space-around' gap='1rem' direction={['column', 'row']}>
+                <Flex w={['100%','40%']} maxW='450px' direction='column' gap='1rem'>
                     <Heading size='lg'>ALEXANDRE GARCIA</Heading>
                     <Text>Desenvolvedor Fullstack apaixonado, dedicado e comprometido com aprendizado contínuo e soluções inovadoras.</Text>
                 </Flex>
-                <Contato />
+                <Contato  />
             </Flex>
             <Divider />
             <Box textAlign='center'>

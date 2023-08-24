@@ -26,7 +26,7 @@ function Header() {
         >
             <Flex align='center' gap='1rem'>
                 <Avatar name="Alexandre Garcia" src={avatar} />
-                <Text>Alexandre Garcia</Text>
+                <Text fontSize='lg' fontWeight='800'>ALEXANDRE GARCIA</Text>
             </Flex>
             <Navigation
                 toggleMenu={toggleMenu}
