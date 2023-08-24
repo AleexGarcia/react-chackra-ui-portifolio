@@ -30,6 +30,7 @@ export default function Banner() {
             <BarraDeContatos />
             <BannerCard />
             <Image
+                filter='brightness(133%)'
                 alignSelf={['center', 'center', 'flex-end', 'flex-end']}
                 maxH={['40vh', '50vh', '75vh', '75vh']}
                 src={banner}

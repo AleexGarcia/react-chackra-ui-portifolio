@@ -1,18 +1,31 @@
-import { Box, Button, Flex, Grid, Heading, Image, Link, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Heading, Image, Link, SlideFade, Text, useColorMode } from "@chakra-ui/react";
 import { IProjeto } from "../../Interfaces";
-function ProjetoCard( {content,deploy,imgSrc,name,repository,skills}: IProjeto) {
+import { useInViewport } from "react-in-viewport";
+import { useRef } from "react";
+function ProjetoCard({ content, deploy, imgSrc, name, repository, skills }: IProjeto) {
 
     const { colorMode } = useColorMode();
+    const ref = useRef(null)
+    const { inViewport } = useInViewport(
+        ref,
+        { rootMargin: "-300px" },
+        { disconnectOnLeave: false },
+        {}
+    )
 
     return (
 
-            <Grid
-                templateColumns={['auto', 'auto', '1fr 1fr']}
-                alignItems='center'
-                minH='75vh'
-                columnGap='2rem'
-            >
+        <Grid
+            templateColumns={['auto', 'auto', '1fr 1fr']}
+            alignItems='center'
+            minH='75vh'
+            columnGap='2rem'
+            ref={ref}
+        >
+            <SlideFade  in={inViewport} offsetX='-200px' >
                 <Image src={imgSrc} />
+            </SlideFade>
+            <SlideFade in={inViewport} offsetX='-200px'>
                 <Flex direction='column' gap='2rem' align='center'>
                     <Heading as='h4'>{name}</Heading>
                     <Text>{content}</Text>
@@ -36,8 +49,9 @@ function ProjetoCard( {content,deploy,imgSrc,name,repository,skills}: IProjeto) 
                         </Link>
                     </Flex>
                 </Flex>
-            </Grid >
-   
+            </SlideFade>
+        </Grid >
+
 
     )
 }
