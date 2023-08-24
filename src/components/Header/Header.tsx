@@ -1,7 +1,7 @@
 import { Avatar, Flex, Switch, useColorMode, Text } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, Icon } from '@chakra-ui/icons'
 import { useState } from "react";
-import avatar from '../assets/avatar.png'
+import avatar from '../../assets/avatar.png'
 import Navigation from "./Navigation";
 function Header() {
 

@@ -1,0 +1,27 @@
+{
+    "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Java",
+        "SpringBoot",
+        "Git",
+        "Express.js",
+        "TypeORM"
+    ],
+    "Idiomas": [
+        "Inglês",
+        "Espanhol"
+    ],
+    "certificacoes": [
+        "Formação front-end - Alura",
+        "Formação TS - Alura",
+        "Formação React c/ TS - Alura",
+        "Formação fullstack TS - DIO",
+        "Formação Java Developer - DIO"
+    ],
+    "educacao": [
+        "Bacharelado em Sistemas de informação - em Andamento",
+        "Engenharia Civil - Incompleto"
+    ]
+}

@@ -1,36 +1,11 @@
 import { Box, Button, Divider, Flex, Grid, GridItem, Heading, Text, useColorMode } from "@chakra-ui/react";
+import dataComp from './competencias.json'
+import { ICompetencia } from "../../Interfaces";
 
 function SobreMim() {
     const { colorMode } = useColorMode();
-    const competencias = {
-        skills:[
-            'JavaScript',
-            'TypeScript',
-            'React.js',
-            'Java',
-            'SpringBoot',
-            'Git',
-            'Express.js',
-            'TypeORM'
-        ],
-        Idiomas: [
-            'Inglês',
-            'Espanhol'
-        ],
-        certificacoes: [
-            'Formação front-end - Alura',
-            'Formação TS - Alura',
-            'Formação React c/ TS - Alura',
-            'Formação fullstack TS - DIO',
-            'Formação Java Developer - DIO'
-        ],
-        educacao: [
-            'Bacharelado em Sistemas de informação - em Andamento',
-            'Engenharia Civil - Incompleto'
-        ]
-    }
+    const competencias: ICompetencia = {...dataComp};
     
-
     return (
         <Grid
             w='100%'
@@ -38,14 +13,14 @@ function SobreMim() {
             id="sobre_mim"
             templateRows={['repeat(3, min-content)', 'repeat(3, min-content)', 'repeat(2, min-content)']}
             templateColumns={['auto', 'auto', 'repeat(2,1fr)']}
-            p='0 1.5rem'
+            p='2rem'
             gap='2rem'
         >
             <GridItem
                 textAlign='center'
                 colSpan={[1, 1, 2, 2]}
             >
-                <Heading paddingBottom='1rem' as={'h2'}>Sobre mim</Heading>
+                <Heading paddingBottom='2rem' as={'h2'}>Sobre mim</Heading>
                 <Divider />
             </GridItem>
             <GridItem >

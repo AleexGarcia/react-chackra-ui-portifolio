@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Rest Countries",
+        "content": "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+        "imgSrc": "src/assets/dopefolio.jpeg",
+        "skills": [
+            "TypeScript",
+            "Express.js",
+            "Sqlite",
+            "TypeORM",
+            "React.js"
+        ],
+        "deploy": "",
+        "repository": ""
+    },
+    {
+        "id": 2,
+        "name": "Rest Countries",
+        "content": "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+        "imgSrc": "src/assets/dopefolio.jpeg",
+        "skills": [
+            "TypeScript",
+            "Express.js",
+            "Sqlite",
+            "TypeORM",
+            "React.js"
+        ],
+        "deploy": "",
+        "repository": ""
+    },
+    {
+        "id": 3,
+        "name": "Rest Countries",
+        "content": "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+        "imgSrc": "src/assets/dopefolio.jpeg",
+        "skills": [
+            "TypeScript",
+            "Express.js",
+            "Sqlite",
+            "TypeORM",
+            "React.js"
+        ],
+        "deploy": "",
+        "repository": ""
+    },
+    {
+        "id": 4,
+        "name": "Rest Countries",
+        "content": "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+        "imgSrc": "src/assets/dopefolio.jpeg",
+        "skills": [
+            "TypeScript",
+            "Express.js",
+            "Sqlite",
+            "TypeORM",
+            "React.js"
+        ],
+        "deploy": "",
+        "repository": ""
+    }
+]
