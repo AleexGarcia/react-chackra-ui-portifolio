@@ -14,6 +14,7 @@ function Projetos() {
             textAlign='center'
             p='2rem'
             direction='column'
+            gap='1rem'
             bg={colorMode === 'dark' ?
                 'linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.64) 100%)'
                 :

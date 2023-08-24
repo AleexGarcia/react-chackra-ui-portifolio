@@ -8,7 +8,7 @@ function ProjetoCard({ content, deploy, imgSrc, name, repository, skills }: IPro
     const ref = useRef(null)
     const { inViewport } = useInViewport(
         ref,
-        { rootMargin: "-300px" },
+        { rootMargin: "-100px" },
         { disconnectOnLeave: false },
         {}
     )
