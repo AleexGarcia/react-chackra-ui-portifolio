@@ -48,7 +48,7 @@
         "id": 4,
         "name": "Rock paper scissors",
         "content": "Desenvolvi o clássico jogo Pedra, Papel e Tesoura, utilizando HTML, CSS e JavaScript. O jogo adapta seu layout com base no tamanho da tela do dispositivo, proporcionando uma experiência ideal. Os jogadores enfrentam o computador em partidas emocionantes, registrando os resultados no placar. A pontuação é preservada mesmo após a atualização do navegador, graças ao armazenamento no localStorage. O desafio foi vencido com sucesso ao criar uma divertida e interativa versão do jogo, mantendo o placar ao longo do tempo.",
-        "imgSrc": "src/assets/rock-paper-scissors.jpg",
+        "imgSrc": "/assets/rock-paper-scissors.jpg",
         "skills": [
             "HTML",
             "CSS",
