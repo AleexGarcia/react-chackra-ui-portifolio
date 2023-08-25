@@ -29,7 +29,7 @@
     {
         "id": 3,
         "name": "Alura Geek",
-        "content": "Desenvolvi um Ecommerce exclusivo voltado para produtos geek, empregando React.js e aplicando estilo com SCSS. Integrei um sistema completo de Gerenciamento de Dados, utilizando o JSON Server para operações CRUD. Além disso, implementei um sistema de registro de usuários com autenticação, armazenando de forma segura as informações no localStorage. Os formulários foram validados com a biblioteca YUP. Além disso, para a navegação entre páginas, utilizei o react-router-dom. Embora recursos avançados como carrinho de compras e segurança mais robusta no armazenamento ainda não estejam presentes, a aplicação proporciona uma base sólida para explorar produtos geek de maneira envolvente.",
+        "content": "Ecommerce voltado para produtos geek. Integrei um sistema completo de gerenciamento de Dados para operações CRUD. Além disso, implementei um sistema de registro de usuários com autenticação. Os formulários foram validados. Além disso, se trata de Single Page Application(SPA). Embora recursos avançados como carrinho de compras e segurança mais robusta no armazenamento ainda não estejam presentes, a aplicação proporciona uma base sólida para explorar produtos geek de maneira envolvente.",
         "imgSrc": "/assets/alura-geek.jpg",
         "skills": [
             "React.js",

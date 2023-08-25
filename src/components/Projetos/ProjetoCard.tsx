@@ -16,9 +16,10 @@ function ProjetoCard({ content, deploy, imgSrc, name, repository, skills }: IPro
     return (
 
         <Grid
-            templateColumns={['auto', 'auto', '1fr 1fr']}
+            templateColumns={['auto', 'auto','auto', '1fr 1fr']}
             alignItems='center'
             minH='75vh'
+            rowGap='1rem'
             columnGap='2rem'
             ref={ref}
         >
