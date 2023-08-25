@@ -9,7 +9,7 @@
             "React.js",
             "Chackra.UI"
         ],
-        "deploy": "portfolio-aleexgarcia.netlify.app",
+        "deploy": "https://portfolio-aleexgarcia.netlify.app",
         "repository": "https://github.com/AleexGarcia/portifolio"
     },
     {
@@ -23,7 +23,7 @@
             "JavaScript",
             "Integração com API"
         ],
-        "deploy": "restcountries-react-3d18c7.netlify.app",
+        "deploy": "https://restcountries-react-3d18c7.netlify.app",
         "repository": "https://github.com/AleexGarcia/rest-countries-api-react"
     },
     {
@@ -41,7 +41,7 @@
             "React Router Dom",
             "Git"
         ],
-        "deploy": "aleex-garcia-alura-geek.netlify.app/",
+        "deploy": "https://aleex-garcia-alura-geek.netlify.app/",
         "repository": "https://github.com/AleexGarcia/Alura-Geek-ReactJS"
     },
     {
@@ -57,7 +57,7 @@
             "Manipulação do DOM",
             "LocalStorage"
         ],
-        "deploy": "aleexgarcia.github.io/rock-paper-scissors",
+        "deploy": "https://aleexgarcia.github.io/rock-paper-scissors",
         "repository": "https://github.com/AleexGarcia/rock-paper-scissors"
     }
 ]

@@ -14,7 +14,7 @@ function Navigation({ menuStatus, toggleMenu }: props) {
                     <Flex
                         flexDirection='column'
                         pos='absolute'
-                        top={['52px', '52px', '70px', '70px']}
+                        top={['66px', '66px', '70px', '70px']}
                         bg='linear-gradient(180deg, rgba(45,55,72,1) 0%, rgba(45,55,72,1) 50%, rgba(26,32,44,1) 100%)'
                         w='100%'
                         right={0}

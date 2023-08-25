@@ -9,14 +9,34 @@
             "SpringBoot",
             "Git",
             "Express.js",
-            "TypeORM"
+            "TypeORM",
+            "JWT",
+            "Responsive design",
+            "HTML",
+            "CSS",
+            "Jest",
+            "SCSS",
+            "Chakra.UI",
+            "Styled components",
+            "SQL - Basic",
+            "PHP",
+            "Node.js",
+            "Npm",
+            "POO",
+            "TDD",
+            "Linguagem C",
+            "Scrum",
+            "CSS Modules",
+            "Testes Unitários",
+            "Figma",
+            "REST APIs"
         ]
     },
     "idiomas": {
         "title": "Idiomas",
         "content": [
-            "Inglês",
-            "Espanhol"
+            "Inglês - Básico",
+            "Espanhol - Intermediário"
         ]
     },
     "certificacoes": {
@@ -32,8 +52,7 @@
     "educacao": {
         "title": "Educação",
         "content": [
-            "Bacharelado em Sistemas de informação - em Andamento",
-            "Engenharia Civil - Incompleto"
+            "Bacharelado em Sistemas de informação | 2022 - 2025"
         ]
     }
 }

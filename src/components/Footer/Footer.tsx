@@ -7,7 +7,7 @@ function Footer() {
         <Grid
             as={'footer'}
             templateRows='2fr min-content min-content'
-            templateColumns='100%'
+            templateColumns='1fr'
             minH='33vh'
             p='2rem'
             gap='1.5rem'

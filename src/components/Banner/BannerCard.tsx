@@ -19,11 +19,13 @@ function BannerCard() {
             <GridItem>
                 <Flex gap={'1rem'}>
                     <Button colorScheme='orange'>
-                        <Link href=''> Download CV</Link>
+                        <Link isExternal href='https://drive.google.com/file/d/1nEeVlci3aBNXhiKgIw61CW9-FO8uL8Ck/view'> Download CV</Link>
                     </Button>
-                    <Button variant='outline'>
-                        <Link href='#meu_trabalho'>Meu Trabalho</Link>
-                    </Button>
+                    <Link textDecoration='none' href='#meu_trabalho'>
+                        <Button variant='outline' colorScheme='gray.600'>
+                            Meu Trabalho
+                        </Button>
+                    </Link>
                 </Flex>
             </GridItem>
         </Grid>
