@@ -8,12 +8,12 @@ function Contato() {
         <Flex
             id="contato"
             gap='.5rem'
-            align='center'
+            align={['center','center','flex-start']}
             justify='center'
             direction='column'
             wrap='wrap'
         >
-            <Heading size='lg' marginBottom='.5rem'>Entre em contato</Heading>
+            <Heading  size='lg' marginBottom='.5rem'>Entre em contato</Heading>
             <Flex direction={['column', 'row']} gap='.5rem' align='center' wrap='wrap' >
                 <Link
                     textDecoration='none' _hover={{ color: 'orange.200' }}
