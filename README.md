@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# Meu Portfólio
+![Imagem do site](public/assets/Portifolio.jpg)
+Bem-vindo ao meu portfólio! Esta é uma página web desenvolvida para mostrar minha jornada, habilidades, projetos e informações de contato. Foi construída utilizando ReactJS, TypeScript e Chakra UI para proporcionar uma experiência elegante e interativa.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Acesso Rápido
 
-Currently, two official plugins are available:
+- [Demonstração](#)
+- [Visão Geral](#visão-geral)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Executar Localmente](#como-executar-localmente)
+- [Contato](#contato)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visão Geral
 
-## Expanding the ESLint configuration
+Esta aplicação é um portfólio pessoal que apresenta minha trajetória profissional, habilidades e projetos. É uma maneira de compartilhar minhas conquistas e me conectar com outras pessoas da área.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Principais recursos:
 
-- Configure the top-level `parserOptions` property like this:
+- **Apresentação de Projetos:** Explore detalhes dos projetos que trabalhei, incluindo descrição, tecnologias usadas e resultados obtidos.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- **Habilidades em Destaque:** Veja uma lista organizada das habilidades que possuo, abrangendo desenvolvimento front-end, back-end e mais.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Contato:** Você pode me contatar através das informações de contato fornecidas na aplicação.
+
+## Tecnologias Utilizadas
+
+- ReactJS
+- TypeScript
+- Chakra UI
+
+Essas tecnologias foram escolhidas para criar uma aplicação moderna, escalável e visualmente atraente.
+
+## Como Executar Localmente
+
+1. Certifique-se de ter o Node.js e o npm instalados em sua máquina.
+
+2. Clone este repositório:
+   ```bash
+   git clone https://github.com/AleexGarcia/portifolio
