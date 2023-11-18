@@ -17,22 +17,37 @@
       "JWT"
     ],
     "deploy": "https://to-do-list-aleexgarcia.vercel.app/",
-    "repository": "https://github.com/AleexGarcia/to-do-list"
+    "repository": "https://github.com/AleexGarcia/react-express-to-do-list"
   },
   {
     "id": 1,
     "name": "AleexGarcia - Portfólio ",
     "content": "Apresento meu site: um portfólio moderno desenvolvido com React.js e TypeScript, estilizado com Chakra UI. Inclui uma página inicial com minha história e uma seção de projetos interativa, destacando minhas habilidades e trabalhos passados. Design responsivo garante acessibilidade em todos os dispositivos. Ideal para compartilhar minha jornada e conquistas no desenvolvimento front-end.",
-    "imgSrc": "/assets/Portifolio.jpg",
+    "imgSrc": "/assets/portfolio.png",
+   
     "skills": ["TypeScript", "React.js", "Chackra.UI"],
     "deploy": "https://portfolio-aleexgarcia.netlify.app",
-    "repository": "https://github.com/AleexGarcia/portifolio"
+    "repository": "https://github.com/AleexGarcia/react-chackra-ui-portifolio"
+  
+  },
+  {
+    "id": 6,
+    "name": "EasyBank - landing page",
+    "content": "Landing page de um banco ficticio de nome EasyBank, design é de um challenge do Front end Mentor.",
+    "imgSrc": "/assets/easy-bank.png",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Styled-components"
+    ],
+    "deploy": "https://easy-bank-styled-components-ggawad6h1-aleexgarcia.vercel.app/",
+    "repository": "https://github.com/AleexGarcia/styled-componets-landing-page"
   },
   {
     "id": 2,
     "name": "Rest Countries API",
     "content": "Minha aplicação React.js com estilo em CSS permite explorar informações de países, exibindo todos na página inicial. Os usuários podem buscar países, filtrar por região e obter detalhes ao clicar em um país. Desenvolvida com chamadas à API, a aplicação é interativa e informativa, destacando minhas habilidades em desenvolvimento web.",
-    "imgSrc": "/assets/rest-countries.jpg",
+    "imgSrc": "/assets/rest-countries.png",
     "skills": ["React.js", "CSS", "JavaScript", "Integração com API"],
     "deploy": "https://restcountries-react-3d18c7.netlify.app",
     "repository": "https://github.com/AleexGarcia/rest-countries-api-react"
@@ -41,7 +56,7 @@
     "id": 3,
     "name": "Alura Geek",
     "content": "Ecommerce voltado para produtos geek. Integrei um sistema completo de gerenciamento de Dados para operações CRUD. Além disso, implementei um sistema de registro de usuários com autenticação. Os formulários foram validados. Além disso, se trata de Single Page Application(SPA). Embora recursos avançados como carrinho de compras e segurança mais robusta no armazenamento ainda não estejam presentes, a aplicação proporciona uma base sólida para explorar produtos geek de maneira envolvente.",
-    "imgSrc": "/assets/alura-geek.jpg",
+    "imgSrc": "/assets/alura-geek.png",
     "skills": [
       "React.js",
       "SCSS",
@@ -58,8 +73,8 @@
   {
     "id": 4,
     "name": "Rock paper scissors",
-    "content": "Desenvolvi o clássico jogo Pedra, Papel e Tesoura, utilizando HTML, CSS e JavaScript. O jogo adapta seu layout com base no tamanho da tela do dispositivo, proporcionando uma experiência ideal. Os jogadores enfrentam o computador em partidas emocionantes, registrando os resultados no placar. A pontuação é preservada mesmo após a atualização do navegador, graças ao armazenamento no localStorage. O desafio foi vencido com sucesso ao criar uma divertida e interativa versão do jogo, mantendo o placar ao longo do tempo.",
-    "imgSrc": "/assets/rock-paper-scissors.jpg",
+    "content": "Desenvolvi o clássico jogo Pedra, Papel e Tesoura. O jogo adapta seu layout com base no tamanho da tela do dispositivo, proporcionando uma experiência ideal. Os jogadores enfrentam o computador em partidas emocionantes, registrando os resultados no placar. A pontuação é preservada mesmo após a atualização do navegador, graças ao armazenamento no localStorage. O desafio foi vencido com sucesso ao criar uma divertida e interativa versão do jogo, mantendo o placar ao longo do tempo.",
+    "imgSrc": "/assets/rock-paper-scissors.png",
     "skills": [
       "HTML",
       "CSS",
@@ -70,5 +85,46 @@
     ],
     "deploy": "https://aleexgarcia.github.io/rock-paper-scissors",
     "repository": "https://github.com/AleexGarcia/rock-paper-scissors"
+  },
+  {
+    "id": 7,
+    "name": "Pomodoro - APP",
+    "content": "Pomodoro APP - projeto de aplicativo de Pomodoro para impulsionar sua produtividade. Com ele, você tem o poder de personalização nas suas mãos. Altere a fonte para um toque pessoal, escolha a cor da barra de progresso que inspira você e ajuste os tempos de foco, intervalo curto e longo para uma experiência de trabalho adaptada ao seu estilo único.",
+    "imgSrc": "/assets/pomodoro.png",
+    "skills": [
+      "HTML",
+      "SCSS",
+      "JavaScript"
+    ],
+    "deploy": "https://pomodoro-app-orcin-sigma.vercel.app/",
+    "repository": "https://github.com/AleexGarcia/Pomodoro-APP"
+  },
+  {
+    "id": 9,
+    "name": "Calculadora",
+    "content": "Desenvolvi uma calculadora funcional com design inspirado no Frontend Mentor. Além de realizar cálculos de maneira eficiente, o site oferece uma experiência visual atraente. A característica marcante é a capacidade de alternar entre três temas distintos por meio de um switch, permitindo aos usuários personalizar a interface conforme sua preferência. Experimente esta calculadora que une funcionalidade e estética, proporcionando uma experiência de usuário única",
+    "imgSrc": "/assets/calculadora.png",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "deploy": "https://calculator-app-main-three.vercel.app/",
+    "repository": "https://github.com/AleexGarcia/calculator-app-main"
+  },
+  {
+    "id": 10,
+    "name": "Sistema Escolar de Hogwart",
+    "content": "Sistema Escolar de Hogwarts: Como meu trabalho final para a disciplina de WEB II, no curso de Sistemas de Informação no IFGoiano, apresento um portal que transporta a mágica de Hogwarts para o ambiente digital. Com quatro níveis de usuários - aluno, professor, admin e público - o sistema permite personalização de perfis, inclusão de fotos e operações específicas para cada categoria, como matrícula em disciplinas para alunos e visualização de alunos matriculados para professores. Este projeto não apenas gerencia informações escolares, mas cria uma experiência imersiva que encapsula o espírito da educação em Hogwarts. 🧙📘✨",
+    "imgSrc": "/assets/sistema-hogwarts.png",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL"
+    ],
+    "deploy": null,
+    "repository": "https://github.com/AleexGarcia/Sistema-escolar-Trabalho-Final-WEB-II"
   }
 ]

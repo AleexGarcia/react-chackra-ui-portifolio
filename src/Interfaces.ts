@@ -4,8 +4,9 @@ export interface IProjeto {
     name: string
     content: string
     skills: Array<string>
-    deploy: string
-    repository: string
+    deploy: string | null
+   repository: string,
+
 }
 
 interface ICompetencia {

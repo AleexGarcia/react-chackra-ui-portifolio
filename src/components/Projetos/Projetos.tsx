@@ -14,7 +14,7 @@ function Projetos() {
             textAlign='center'
             p='2rem'
             direction='column'
-            gap='1rem'
+            gap={{base:'2rem', md:'4rem', lg:'0'}}
             bg={colorMode === 'dark' ?
                 'linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 62%, rgba(0,0,0,0.64) 100%)'
                 :
@@ -24,11 +24,13 @@ function Projetos() {
                 <Heading paddingBottom='2rem'>Projetos</Heading>
                 <Divider borderColor='gray.400' />
             </Box>
-            {projetos?.map(projeto => {
+            {projetos?.map((projeto: IProjeto, index) => {
                 return (
                     <ProjetoCard
-                        key={projeto.id}
-                        {...projeto}
+                        key={projeto.id} 
+                        projeto={projeto}
+                        index={index}                                             
+                   
                     />
                 )
             })}
